@@ -4,575 +4,424 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomáš Tropp - Hrubé stavby z vápenopísku</title>
-    <meta name="description"
-        content="Stavíme hrubé stavby z vápenopískových bloků. Hrubá stavba rozhoduje o kvalitě celého domu. Profesionální realizace, přesnost a kvalita.">
+    <title>Tomáš Tropp | Hrubá stavba bez kompromisů</title>
+    <!-- Preload prominent font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=2">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Tomáš Tropp - Hrubé stavby z vápenopísku">
-    <meta property="og:description" content="Stavíme hrubé stavby z vápenopískových bloků. Profesionální realizace.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.vapenopiskovestavby.cz/">
-    <meta property="og:image" content="Obrázky/hero_sekce_hruba_stavba_Vapenopiskove_zdivo.jpg">
+    <!-- Using Main Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
+<body class="is-v4">
 
-    <header class="site-header">
-        <div class="container header-container">
-            <a href="#" class="logo">
-                <img src="Obrázky/Logo Tropp Tomáš stavby.png" alt="Tomáš Tropp Stavby Logo">
-            </a>
+    <!-- Custom Cursor (Optional WOW factor) -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-            <button class="menu-toggle" aria-label="Otevřít menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- MAIN NAVIGATION - Floating/Minimal -->
+    <nav class="v4-nav">
+        <div class="nav-logo">TROPP.</div>
+        <div class="nav-menu">
+            <a href="#work" class="nav-link">Služby</a>
+            <a href="#process" class="nav-link">Postup</a>
+            <a href="#contact" class="nav-link filled">Kontaktovat</a>
+        </div>
+        <button class="nav-toggle">
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+    </nav>
 
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#hrube-stavby">Hrubé stavby</a></li>
-                    <li><a href="#vyhody">Výhody vápenopísku</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
-            </nav>
+    <!-- HERO SECTION - "Editorial Style" -->
+    <header class="hero-v4">
+        <div class="hero-grid">
+            <div class="hero-text-huge">
+                <span class="word-1">STAVÍME</span>
+                <span class="word-2">BUDOUCNOST</span>
+            </div>
+
+            <div class="hero-subline">
+                <p>Vápenopískové hrubé stavby.<br>Preciznost v každém detailu.</p>
+                <div class="scroll-indicator">
+                    <span>SCROLL</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlapping Element (Moved Outside Grid) -->
+        <div class="hero-image-container">
+            <img src="Obrázky/mavajici_Tomas_Tropp.png" alt="Tomáš Tropp" class="hero-person">
+            <!-- Decorative Badge -->
+            <div class="badge-circle">
+                <svg viewBox="0 0 100 100" width="100" height="100">
+                    <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                        fill="transparent" />
+                    <text>
+                        <textPath href="#circlePath" fill="#000">
+                            KVALITA • TRADICE • KVALITA • TRADICE •
+                        </textPath>
+                    </text>
+                </svg>
+                <div class="badge-center">2026</div>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-bg">
-                <img src="Obrázky/hero_sekce_hruba_stavba_Vapenopiskove_zdivo.jpg"
-                    alt="Hrubá stavba z vápenopískových bloků" class="hero-img">
-                <div class="overlay"></div>
-            </div>
+    <!-- MARQUEE (Moving Text) -->
+    <div class="marquee-section">
+        <div class="marquee-content">
+            <span>PEVNOST &nbsp; • &nbsp; AKUSTIKA &nbsp; • &nbsp; AKUMULACE &nbsp; • &nbsp; EKOLOGIE &nbsp; • &nbsp;
+            </span>
+            <span>PEVNOST &nbsp; • &nbsp; AKUSTIKA &nbsp; • &nbsp; AKUMULACE &nbsp; • &nbsp; EKOLOGIE &nbsp; • &nbsp;
+            </span>
+        </div>
+    </div>
 
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Stavíme hrubé stavby z&nbsp;vápenopískových bloků</h1>
-                    <p class="lead">Hrubá stavba rozhoduje o&nbsp;kvalitě celého domu.</p>
-                    <p class="description">Klademe důraz na&nbsp;poctivé provedení, promyšlené detaily a&nbsp;správná
-                        technická rozhodnutí už od&nbsp;začátku stavby.</p>
-
-                    <div class="hero-buttons">
-                        <a href="#kontakt" class="btn btn-primary">Chci postavit hrubou stavbu</a>
-                        <a href="#vyhody" class="btn btn-secondary">Více o&nbsp;vápenopísku</a>
-                    </div>
+    <!-- INTRO GRID (Specialization) -->
+    <section id="philosophy" class="intro-v4 section-padding">
+        <div class="container container-wide">
+            <div class="grid-asym">
+                <div class="col-text" data-speed="0.9">
+                    <h2 class="section-title">Nejsme korporát.<br>Jsme řemeslníci.</h2>
+                    <p class="lead-text">Hrubá stavba je kostra vašeho domova. Pokud není poctivá kostra, dům nebude
+                        fungovat. My stavíme srdcem a technickým rozumem.</p>
+                    <p>Specializujeme se výhradně na <strong>vápenopískové zdivo</strong>. Víme o něm všechno.</p>
+                    <a href="#contact" class="btn-arrow">Spolupracovat <i class="bi bi-arrow-right"></i></a>
                 </div>
-            </div>
-
-            <!-- Decor Elements for modern feel -->
-            <div class="hero-decor-circle"></div>
-
-            <!-- Persona Image -->
-            <img src="Obrázky/mavajici_Tomas_Tropp.png" class="hero-persona" alt="Tomáš Tropp" loading="lazy">
-        </section>
-
-        <!-- SPECIALIZATION SECTION -->
-        <section id="specializace" class="section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Naše specializace</h2>
-                    <p class="section-subtitle">Profesionální realizace hrubých staveb</p>
-                    <p>Stavíme hrubé stavby rodinných domů z&nbsp;vápenopískových cihel. Provádíme práce od&nbsp;základů
-                        – zakládání, nosné zdi, příčky.</p>
-                </div>
-
-                <div class="specialization-grid">
-                    <!-- Card 1 -->
-                    <div class="spec-card">
-                        <div class="spec-img-wrapper">
-                            <img src="Obrázky/dum_vapenopiskove zdivo.png" alt="Rodinné domy" loading="lazy">
-                        </div>
-                        <div class="spec-content">
-                            <h3>Rodinné domy</h3>
-                            <p>Pevné a&nbsp;trvanlivé konstrukce s&nbsp;vynikající akustikou a&nbsp;tepelnou akumulací.
-                                Ideální pro&nbsp;komfortní rodinné bydlení.</p>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="spec-card">
-                        <div class="spec-img-wrapper">
-                            <img src="Obrázky/nizkoenergeticky dum.png" alt="Nízkoenergetické domy" loading="lazy">
-                        </div>
-                        <div class="spec-content">
-                            <h3>Nízkoenergetické domy</h3>
-                            <p>Kombinace vápenopískového zdiva a&nbsp;zateplení. Energetická náročnost 15-50 kWh/m²/rok
-                                při&nbsp;zachování výborné akumulace tepla.</p>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="spec-card">
-                        <div class="spec-img-wrapper">
-                            <img src="Obrázky/bytovy_dum.png" alt="Bytové domy" loading="lazy">
-                        </div>
-                        <div class="spec-content">
-                            <h3>Bytové domy</h3>
-                            <p>Vynikající zvuková izolace mezi byty a&nbsp;vysoká požární odolnost. Maximální bezpečnost
-                                a&nbsp;soukromí pro&nbsp;obyvatele.</p>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="spec-card">
-                        <div class="spec-img-wrapper">
-                            <img src="Obrázky/pasivni_dum.png" alt="Pasivní domy" loading="lazy">
-                        </div>
-                        <div class="spec-content">
-                            <h3>Pasivní domy</h3>
-                            <p>Precizní realizace vápenopískového zdiva bez&nbsp;tepelných mostů s&nbsp;dokonalou
-                                vzduchotěsností. Minimální energetická náročnost do&nbsp;15&nbsp;kWh/m²/rok.</p>
+                <div class="col-image" data-speed="1.1">
+                    <div class="image-reveal">
+                        <!-- Technical photo replaced back as requested -->
+                        <img src="Obrázky/zalozeni_rohu.jpg" alt="Detail hrubé stavby" class="parallax-img">
+                        <div class="overlay-caption">
+                            <span>01</span>
+                            <h3>Přesnost</h3>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- SERVICES / PROCESS SECTION -->
-        <section id="sluzby" class="section-padding bg-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Komplexní řešení hrubé stavby</h2>
-                    <p class="section-subtitle">Naše Služby & Technické provedení</p>
-                    <p class="max-width-text">Hrubá stavba je základ domu, který rozhoduje o&nbsp;jeho kvalitě
-                        na&nbsp;desítky let dopředu. Soustředíme se na&nbsp;precizní provedení každého detailu.</p>
-                </div>
+    <!-- BIG IMAGE PARALLAX SECTION -> VIDEO HERE -->
+    <section class="full-image-section">
+        <!-- VIDEO BACKGROUND PLACEHOLDER -->
+        <!-- video src="video_pozadi.mp4" autoplay muted loop playsinline></video -->
 
-                <div class="services-grid">
-                    <!-- Service 1 -->
-                    <div class="service-item">
-                        <div class="service-img-wrapper">
-                            <img src="Obrázky/zalozeni_rohu.jpg" alt="Založení rohů" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3>Založení rohů</h3>
-                            <p>Zajišťujeme přesné zaměření a&nbsp;založení rohů stavby pomocí laserové techniky
-                                pro&nbsp;dokonalou rovinnost.</p>
-                        </div>
-                    </div>
+        <div class="parallax-bg" style="background-image: url('Obrázky/pohled_okna_VPC.jpg');"></div>
 
-                    <!-- Service 2 -->
-                    <div class="service-item">
-                        <div class="service-img-wrapper">
-                            <img src="Obrázky/zalozeni_prvni_rady.jpeg" alt="Založení první řady" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3>Založení první řady</h3>
-                            <p>Realizujeme precizní pokládku první řady na&nbsp;speciální zakládací maltu. Klíčové
-                                pro&nbsp;stabilitu celé konstrukce.</p>
-                        </div>
-                    </div>
+        <div class="content-over">
+            <h2>Vaše stavba<br>v našich rukou</h2>
+        </div>
+    </section>
 
-                    <!-- Service 3 -->
-                    <div class="service-item">
-                        <div class="service-img-wrapper">
-                            <img src="Obrázky/nosna_zed_VPC (1).jpg" alt="Nosné zdi" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3>Nosné zdi</h3>
-                            <p>Stavíme nosné stěny s&nbsp;důrazem na&nbsp;přesné vazby a&nbsp;správné promaltování spojů
-                                dle technologických postupů.</p>
-                        </div>
-                    </div>
-
-                    <!-- Service 4 -->
-                    <div class="service-item">
-                        <div class="service-img-wrapper">
-                            <img src="Obrázky/příčka.jpeg" alt="Příčky" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3>Příčky</h3>
-                            <p>Realizujeme vnitřní příčky s&nbsp;důrazem na&nbsp;akustickou izolaci a&nbsp;napojení
-                                na&nbsp;nosné konstrukce.</p>
-                        </div>
-                    </div>
-
-                    <!-- Service 5 -->
-                    <div class="service-item">
-                        <div class="service-img-wrapper">
-                            <img src="Obrázky/rohova_zed_s otvory na elektro.jpg" alt="Příprava pro elektrorozvody"
-                                loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3>Příprava pro elektrorozvody</h3>
-                            <p>Využíváme systémové kanálky v&nbsp;blocích pro&nbsp;vedení kabelů bez&nbsp;narušení
-                                statiky a&nbsp;vytváříme drážky dle projektu.</p>
-                        </div>
-                    </div>
-
-                    <!-- Service 6 -->
-                    <div class="service-item">
-                        <div class="service-img-wrapper">
-                            <img src="Obrázky/detail_preklad_VPC.jpg" alt="Řešení otvorů a překladů" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3>Řešení otvorů a překladů</h3>
-                            <p>Instalujeme systémové překlady a&nbsp;řešíme ostění s&nbsp;důrazem na&nbsp;eliminaci
-                                tepelných mostů a&nbsp;přesné rozměry.</p>
-                        </div>
-                    </div>
-
-                    <!-- Service 7 -->
-                    <div class="service-item">
-                        <div class="service-img-wrapper">
-                            <img src="Obrázky/betonovani_prekladu.jpeg" alt="Věncovka" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3>Věncovka</h3>
-                            <p>Nabízíme odborné konzultace a&nbsp;precizní realizaci technických požadavků
-                                na&nbsp;vápenopískové stavby.</p>
-                        </div>
-                    </div>
-
-                    <!-- Service 8 -->
-                    <div class="service-item">
-                        <div class="service-img-wrapper">
-                            <img src="Obrázky/mereni_rovinnosti.jpg" alt="Dokončovací práce" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3>Dokončovací práce</h3>
-                            <p>Realizujeme finální úpravy zdiva, začištění spár a&nbsp;kontrolu rovinnosti
-                                před&nbsp;předáním hrubé stavby.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- BENEFITS GRID (New) -->
+    <section class="benefits-section">
+        <div class="benefits-v4-grid">
+            <div class="benefit-card-v4">
+                <i class="bi bi-shield-check big-icon"></i>
+                <h3>Pevnost</h3>
+                <p>Mimořádná pevnost pro tenčí a stabilní konstrukce, které vydrží generace.</p>
             </div>
-        </section>
-
-        <!-- BENEFITS SECTION -->
-        <section id="vyhody" class="section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Proč zvolit vápenopískové zdivo</h2>
-                    <p class="section-subtitle">Materiál, který rozhoduje o kvalitě domu</p>
-                    <p class="max-width-text">Vápenopískové zdivo je ideální volbou pro moderní stavby díky své
-                        pevnosti, ekologické udržitelnosti a&nbsp;vynikajícím izolačním vlastnostem.</p>
-                </div>
-
-                <div class="benefits-grid">
-                    <!-- Benefit 1 -->
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <img src="Obrázky/pevnost.png" alt="Pevnost a stabilita" loading="lazy">
-                        </div>
-                        <h3>Pevnost a stabilita</h3>
-                        <p>Materiál s&nbsp;mimořádnou pevností pro&nbsp;tenčí a&nbsp;stabilní konstrukce.</p>
-                    </div>
-
-                    <!-- Benefit 2 -->
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <img src="Obrázky/tepelny_komfort.png" alt="Tepelná stabilita" loading="lazy">
-                        </div>
-                        <h3>Tepelná stabilita</h3>
-                        <p>Materiál zajišťuje stabilní vnitřní teplotu díky schopnosti akumulace tepla po&nbsp;celý rok.
-                        </p>
-                    </div>
-
-                    <!-- Benefit 3 -->
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <img src="Obrázky/akusticky komfort.png" alt="Akustický komfort" loading="lazy">
-                        </div>
-                        <h3>Akustický komfort</h3>
-                        <p>Vysoká objemová hmotnost omezuje přenos hluku mezi místnostmi i&nbsp;zvenčí.</p>
-                    </div>
-
-                    <!-- Benefit 4 -->
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <img src="Obrázky/ekologie.png" alt="Přírodní a ekologické" loading="lazy">
-                        </div>
-                        <h3>Přírodní a ekologické</h3>
-                        <p>Materiál se skládá pouze z&nbsp;vápna, písku a&nbsp;vody, bez&nbsp;dalších syntetických
-                            příměsí.</p>
-                    </div>
-                </div>
+            <div class="benefit-card-v4">
+                <i class="bi bi-thermometer-sun big-icon"></i>
+                <h3>Teplo</h3>
+                <p>Stabilní vnitřní teplota díky schopnosti akumulace tepla po celý rok.</p>
             </div>
-        </section>
-
-        <!-- MODERN PROCESS TIMELINE SECTION -->
-        <section id="postup" class="section-padding bg-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Náš postup</h2>
-                    <p class="section-subtitle">Cesta k vaší nové hrubé stavbě</p>
-                    <p class="max-width-text">Transparentní a přehledný proces spolupráce.</p>
-                </div>
-
-                <div class="timeline-container">
-                    <!-- Step 1 -->
-                    <div class="timeline-row">
-                        <div class="timeline-content left">
-                            <span class="step-number">01</span>
-                            <h3>První kontakt</h3>
-                            <p>Probereme vaši představu, projekt a možnosti realizace. Zjistíme vaše potřeby a
-                                očekávání.</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="timeline-row">
-                        <div class="timeline-content right">
-                            <span class="step-number">02</span>
-                            <h3>Konzultace & Návrh</h3>
-                            <p>Projdeme projektovou dokumentaci a navrhneme technické řešení hrubé stavby na míru.</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="timeline-row">
-                        <div class="timeline-content left">
-                            <span class="step-number">03</span>
-                            <h3>Přesná kalkulace</h3>
-                            <p>Připravíme jasnou a transparentní cenovou nabídku. Žádné skryté poplatky, víte, za co
-                                platíte.</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 4 -->
-                    <div class="timeline-row">
-                        <div class="timeline-content right">
-                            <span class="step-number">04</span>
-                            <h3>Smlouva & Harmonogram</h3>
-                            <p>Závazně potvrdíme termíny a rozsah prací. Vše černé na bílém pro váš klid.</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 5 -->
-                    <div class="timeline-row">
-                        <div class="timeline-content left">
-                            <span class="step-number">05</span>
-                            <h3>Realizace</h3>
-                            <p>Stavíme s důrazem na přesnost, technologickou kázeň a detail. Pravidelně vás informujeme.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Step 6 -->
-                    <div class="timeline-row">
-                        <div class="timeline-content right">
-                            <span class="step-number">06</span>
-                            <h3>Předání stavby</h3>
-                            <p>Dílo předáváme uklizené, s plnou dokumentací a kontrolou kvality. Vaše stavba je hotová.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="process-cta">
-                    <h3>Připraveni začít?</h3>
-                    <div class="margin-top-20">
-                        <a href="#kontakt" class="btn btn-primary">Chci nezávaznou konzultaci</a>
-                    </div>
-                </div>
+            <div class="benefit-card-v4">
+                <i class="bi bi-volume-mute big-icon"></i>
+                <h3>Ticho</h3>
+                <p>Vysoká objemová hmotnost omezuje přenos hluku. Klid pro váš domov.</p>
             </div>
-        </section>
-
-        <!-- PHOTOGRAPHY / PROJECT GALLERY SECTION -->
-        <section id="fotografie" class="section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Fotografie z Našeho Projektu</h2>
-                    <p class="section-subtitle">Reálné stavby, reálné výsledky</p>
-                    <p class="max-width-text">Hrubá stavba rodinného domu Plzeň-jih • rok výstavby 2025 • síla zdiva 20
-                        cm</p>
-                </div>
-
-                <!-- Simple Gallery Grid -->
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="Obrázky/pohled_okna_VPC.jpg" alt="Pohled na okna VPC" loading="lazy">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="Obrázky/pohled_vapenopiskove_zdivo.jpg" alt="Pohled na vápenopískové zdivo"
-                            loading="lazy">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="Obrázky/stena_hruba stavba_vapenopiskove_bloky.jpg" alt="Stěna hrubá stavba"
-                            loading="lazy">
-                    </div>
-                </div>
+            <div class="benefit-card-v4">
+                <i class="bi bi-tree big-icon"></i>
+                <h3>Ekologie</h3>
+                <p>Jen vápno, písek a voda. Žádná zbytečná chemie. Přírodní materiál.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- REFERENCES SECTION -->
-        <section id="reference" class="section-padding bg-light">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Reference</h2>
-                    <p class="section-subtitle">Jak probíhala realizace hrubé stavby v praxi</p>
-                </div>
+    <!-- SERVICES ACCORDION (Interactive) -->
+    <section id="work" class="services-v4 section-padding">
+        <div class="container">
+            <div class="services-header">
+                <span class="label">KOMPLEXNÍ SLUŽBY</span>
+                <h2>Co přesně děláme?</h2>
+            </div>
 
-                <div class="testimonials-grid">
-                    <!-- Testimonial 1 -->
-                    <div class="testimonial-card">
-                        <div class="client-info">
-                            <img src="Obrázky/reference_klient.png" alt="Václav Pavlíček" class="client-img">
-                            <div>
-                                <h4>Václav Pavlíček</h4>
-                                <span>Majitel RD</span>
+            <div class="accordion-list">
+                <!-- Item 1: Založení -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="accordion-num">01</span>
+                        <h3 class="accordion-title">Založení stavby</h3>
+                        <div class="accordion-icon"><i class="bi bi-plus-lg"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="acc-text">
+                                <p><strong>Založení rohů:</strong> Zajišťujeme přesné zaměření a založení rohů stavby.
+                                    Používáme laserovou techniku pro dokonalou rovinnost, která je základem kvalitní
+                                    vápenopískové konstrukce.</p>
+                                <p><strong>První řada:</strong> Realizujeme precizní pokládku první řady bloků na
+                                    speciální zakládací maltu. Dokonalá rovina první řady je klíčová pro stabilitu
+                                    celého domu.</p>
                             </div>
+                            <img src="Obrázky/zalozeni_rohu.jpg" alt="Zakládání rohu" class="accordion-img">
                         </div>
-                        <p class="testimonial-text">"Oceňoval jsem hlavně přesnost provedení a to, že všechno probíhalo
-                            podle domluvy. Detaily byly řešeny průběžně a bez zbytečných komplikací."</p>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-card">
-                        <div class="client-info">
-                            <img src="Obrázky/reference_klientka.png" alt="Tereza Pavlíčková" class="client-img">
-                            <div>
-                                <h4>Tereza Pavlíčková</h4>
-                                <span>Majitelka RD</span>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">"Pro mě bylo důležité, že jsme měli přehled o tom, co se na stavbě
-                            děje a co bude následovat. Komunikace byla srozumitelná a cítila jsem se klidně."</p>
                     </div>
                 </div>
 
-                <!-- Personal Reference CTA -->
-                <div class="personal-ref-box">
-                    <h3>Chcete se zeptat někoho, kdo tím prošel?</h3>
-                    <p>Pan Pavlíček nám nabídl možnost zprostředkovat osobní zkušenost se stavbou z vápenopískového
-                        zdiva.</p>
-                    <p>Zájemcům o hrubou stavbu může sdílet své zkušenosti s materiálem, postupem i průběhem realizace.
+                <!-- Item 2: Nosné zdivo -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="accordion-num">02</span>
+                        <h3 class="accordion-title">Nosné zdivo & Příčky</h3>
+                        <div class="accordion-icon"><i class="bi bi-plus-lg"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="acc-text">
+                                <p><strong>Nosné zdi:</strong> Stavíme z vápenopískových bloků s důrazem na přesné vazby
+                                    a správné promaltování spojů. Dodržujeme technologické postupy výrobce.</p>
+                                <p><strong>Příčky:</strong> Realizujeme vnitřní příčky s důrazem na akustickou izolaci.
+                                    Řešíme napojení na nosné konstrukce.</p>
+                            </div>
+                            <!-- Using a wall detail or similar -->
+                            <img src="Obrázky/nosna_zed_VPC (1).jpg" alt="Nosné zdivo VPC" class="accordion-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Elektro & Otvory -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="accordion-num">03</span>
+                        <h3 class="accordion-title">Elektro & Otvory</h3>
+                        <div class="accordion-icon"><i class="bi bi-plus-lg"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="acc-text">
+                                <p><strong>Elektro:</strong> Vytváříme drážky a prostupy pro elektroinstalace. Využíváme
+                                    systémové kanálky v blocích pro vedení kabelů bez narušení statiky.</p>
+                                <p><strong>Otvory:</strong> Instalujeme systémové překlady a řešíme ostění otvorů s
+                                    důrazem na eliminaci tepelných mostů.</p>
+                            </div>
+                            <!-- Perfect image for this -->
+                            <img src="Obrázky/rohova_zed_s otvory na elektro.jpg" alt="Příprava elektro"
+                                class="accordion-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Dokončení -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span class="accordion-num">04</span>
+                        <h3 class="accordion-title">Dokončení & Věnce</h3>
+                        <div class="accordion-icon"><i class="bi bi-plus-lg"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="acc-text">
+                                <p><strong>Věncovka:</strong> Realizace věnců a překladů dle statického návrhu.</p>
+                                <p><strong>Dokončení:</strong> Realizujeme finální úpravy zdiva včetně začištění spár a
+                                    přípravy pro omítky. Provádíme kontrolu rovinnosti a svislosti celé stavby před
+                                    předáním.</p>
+                            </div>
+                            <img src="Obrázky/pohled_vapenopiskove_zdivo.jpg" alt="Hotové zdivo" class="accordion-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORIZONTAL PROCESS SCROLL -->
+    <section id="process" class="process-section">
+        <div class="section-padding">
+            <div class="container">
+                <h2 style="margin-bottom: 2rem;">Náš postup</h2>
+            </div>
+        </div>
+        <div class="process-sticky-container">
+            <!-- Step 1 -->
+            <div class="process-step-card">
+                <span class="process-step-num">1</span>
+                <h3>Kontakt</h3>
+                <p>Probereme vaši představu, projekt a možnosti realizace.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="process-step-card">
+                <span class="process-step-num">2</span>
+                <h3>Konzultace</h3>
+                <p>Projdeme projektovou dokumentaci a navrhneme technické řešení.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="process-step-card">
+                <span class="process-step-num">3</span>
+                <h3>Kalkulace</h3>
+                <p>Připravíme jasnou cenovou nabídku. Víte přesně, co platíte.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="process-step-card">
+                <span class="process-step-num">4</span>
+                <h3>Smlouva</h3>
+                <p>Podepíšeme smlouvu a domluvíme pevný harmonogram.</p>
+            </div>
+            <!-- Step 5 -->
+            <div class="process-step-card">
+                <span class="process-step-num">5</span>
+                <h3>Realizace</h3>
+                <p>Systematická stavba s důrazem na přesnost a technologii.</p>
+            </div>
+            <!-- Step 6 -->
+            <div class="process-step-card">
+                <span class="process-step-num">6</span>
+                <h3>Předání</h3>
+                <p>Kontrola rovinnosti, úklid a předání hotového díla.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PRICING / WHO (Split Screen) -->
+    <section class="pricing-header-v4" style="background:var(--white); padding: 4rem 2rem; border-top: 2px solid #000;">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom:0;">CENÍK & SPOLUPRÁCE</h2>
+        </div>
+    </section>
+
+    <section class="pricing-split">
+        <div class="pricing-col">
+            <h3>Svépomocí</h3>
+            <p style="font-size: 1.5rem; margin-bottom: 2rem;">Chcete stavět sami, ale nosné zdivo nechat na profících?
+            </p>
+            <ul class="pricing-features" style="list-style: none;">
+                <li><i class="bi bi-check-circle-fill"></i> Odborné založení a vyzdění</li>
+                <li><i class="bi bi-check-circle-fill"></i> Příprava pro další profese</li>
+                <li><i class="bi bi-check-circle-fill"></i> Cena za m² zdiva</li>
+            </ul>
+            <a href="#contact" class="btn-arrow" style="margin-top: 3rem;">Chci pomoct s hrubou stavbou</a>
+        </div>
+        <div class="pricing-col" style="background: #111; color: #fff;">
+            <h3>Na klíč</h3>
+            <p style="font-size: 1.5rem; margin-bottom: 2rem; color: #ccc;">Kompletní hrubá stavba bez vašich starostí.
+            </p>
+            <ul class="pricing-features" style="list-style: none;">
+                <li><i class="bi bi-check-circle-fill"></i> Realizace dle projektu</li>
+                <li><i class="bi bi-check-circle-fill"></i> Koordinace a materiál</li>
+                <li><i class="bi bi-check-circle-fill"></i> Garance kvality a termínu</li>
+            </ul>
+            <!-- Using white arrow for dark bg -->
+            <a href="#contact" class="btn-arrow" style="margin-top: 3rem; border-color: #fff;">Chci kompletní
+                realizaci</a>
+        </div>
+    </section>
+
+    <!-- FOOTER - Minimalist & Bold -->
+    <footer id="contact" class="footer-v4">
+        <div class="container">
+            <div class="footer-top">
+                <h2 class="big-cta">Máte projekt?<br>Pojďme stavět.</h2>
+                <a href="mailto:info@vapenopiskovestavby.cz" class="btn-huge">
+                    info@vapenopiskovestavby.cz
+                </a>
+            </div>
+
+            <div class="footer-grid">
+                <div class="col">
+                    <h4>Volejte</h4>
+                    <p><a href="tel:+420727940402">+420 727 940 402</a></p>
+                </div>
+                <div class="col">
+                    <h4>Adresa</h4>
+                    <p>Říční 579/6, Plzeň</p>
+                </div>
+                <div class="col">
+                    <h4>Sociální sítě</h4>
+                    <p>
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
                     </p>
-                    <div class="margin-top-20">
-                        <a href="#kontakt" class="btn btn-primary">Chci osobní referenci</a>
-                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- PRICE SECTION -->
-        <section id="cena" class="section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Cena</h2>
-                    <p class="section-subtitle">Kolik stojí hrubá stavba z vápenopískových bloků</p>
-                    <p class="max-width-text">Cena hrubé stavby z vápenopískových bloků se vždy odvíjí od konkrétního
-                        projektu a rozsahu prací.</p>
-                </div>
-
-                <div class="price-options-grid">
-                    <div class="price-card">
-                        <h3>Cena při stavbě svépomocí</h3>
-                        <p>U staveb svépomocí zákazník zajišťuje a hradí materiály samostatně a my provádíme odborné
-                            zdění z vápenopískových bloků s cenou stanovenou podle m² vyzděné stěny.</p>
-                    </div>
-
-                    <div class="price-card highlighted">
-                        <h3>Cena při realizaci na klíč</h3>
-                        <p>U realizace na klíč přebíráme kompletní zodpovědnost za dodávku materiálů i provedení hrubé
-                            stavby a připravíme vám individuální kalkulaci podle projektové dokumentace.</p>
-                    </div>
-                </div>
-
-                <div class="price-factors">
-                    <h4>Co má na cenu největší vliv?</h4>
-                    <ul class="factors-list">
-                        <li><i class="bi bi-check2-circle"></i> Celkový rozsah zdiva v (m²)</li>
-                        <li><i class="bi bi-check2-circle"></i> Velikost a členitost stavby</li>
-                        <li><i class="bi bi-check2-circle"></i> Rozsah spolupráce (svépomoc × na klíč)</li>
-                        <li><i class="bi bi-check2-circle"></i> Tloušťka a typ vápenopískových bloků</li>
-                        <li><i class="bi bi-check2-circle"></i> Lokalita stavby</li>
-                    </ul>
-                    <div class="margin-top-20 text-center">
-                        <a href="#kontakt" class="btn btn-primary">Chci orientační kalkulaci hrubé stavby</a>
-                    </div>
-                </div>
+            <div class="footer-bottom">
+                <span>© 2026 Tomáš Tropp</span>
+                <span>Design: V4 "Wild" Edition</span>
             </div>
-        </section>
+        </div>
+    </footer>
 
-        <!-- CONTACT SECTION / FOOTER -->
-        <footer id="kontakt" class="site-footer">
-            <div class="container">
-                <div class="footer-cta-section">
-                    <h2>Získejte orientační cenu hrubé stavby</h2>
-                    <p>Napište nám pár základních informací o Vaší stavbě. Ozveme se Vám a navrhneme další postup.</p>
+    <!-- Scripts -->
+    <script>
+        // Custom Cursor Logic
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
 
-                    <div class="contact-grid-layout">
-                        <!-- Left: Contact Details -->
-                        <div class="contact-info-grid">
-                            <div class="contact-box">
-                                <i class="bi bi-geo-alt"></i>
-                                <h4>Adresa</h4>
-                                <p>Říční 579/6, Plzeň 301 00</p>
-                            </div>
-                            <div class="contact-box">
-                                <i class="bi bi-telephone"></i>
-                                <h4>Telefon</h4>
-                                <p><a href="tel:+420727940402">727 940 402</a></p>
-                            </div>
-                            <div class="contact-box">
-                                <i class="bi bi-envelope"></i>
-                                <h4>Email</h4>
-                                <p><a href="mailto:info@vapenopiskovestavby.cz">info@vapenopiskovestavby.cz</a></p>
-                            </div>
-                        </div>
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
 
-                        <!-- Right: Formspree Form -->
-                        <div class="contact-form-wrapper">
-                            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
-                                <div class="form-group">
-                                    <input type="text" name="name" placeholder="Vaše jméno" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" placeholder="Váš email" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" name="phone" placeholder="Telefon">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" rows="4" placeholder="O jakou stavbu máte zájem?"
-                                        required></textarea>
-                                </div>
-                                <!-- Honeypot for spam protection -->
-                                <input type="text" name="_gotcha" style="display:none">
+            // Dot follows instantly
+            if (cursorDot) {
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+            }
 
-                                <button type="submit" class="btn btn-primary btn-block">Odeslat nezávaznou
-                                    poptávku</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+            // Outline follows with slight delay
+            if (cursorOutline) {
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, { duration: 500, fill: "forwards" });
+            }
+        });
 
-                <div class="footer-main">
-                    <div class="footer-col">
-                        <h3>Tomáš Tropp Stavby</h3>
-                        <p>Objevte Sílu Vápenopískových Staveb.<br>Váš specialista na hrubé stavby z vápenopísku.</p>
-                        <p class="small-text">IČ: 643 99 168<br>Stavíme s pevnými základy a vizí.</p>
-                    </div>
+        // Parallax & Reveal
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroText = document.querySelector('.hero-text-huge');
+            if (heroText) heroText.style.transform = `translateY(${scrolled * 0.3}px)`;
 
-                    <div class="footer-col">
-                        <h3>Rychlá navigace</h3>
-                        <ul class="footer-links">
-                            <li><a href="#hrube-stavby">Hrubé stavby</a></li>
-                            <li><a href="#cena">Cena hrubé stavby</a></li>
-                            <li><a href="#vyhody">Výhody vápenopísku</a></li>
-                            <li><a href="#postup">Náš postup</a></li>
-                        </ul>
-                    </div>
-                </div>
+            const reveals = document.querySelectorAll('.image-reveal, .benefit-card-v4');
+            reveals.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.85) el.classList.add('active');
+            });
+        });
 
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Tomáš Tropp Stavby. Všechna práva vyhrazena.</p>
-                </div>
-            </div>
-        </footer>
+        // Accordion Logic
+        const accordions = document.querySelectorAll('.accordion-item');
+        accordions.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+            header.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
 
-        <script src="script.js"></script>
+                // Close all
+                accordions.forEach(acc => {
+                    acc.classList.remove('active');
+                    acc.querySelector('.accordion-body').style.maxHeight = null;
+                });
+
+                // Open clicked if wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                    const body = item.querySelector('.accordion-body');
+                    body.style.maxHeight = body.scrollHeight + "px";
+                }
+            });
+        });
+
+        // Horizontal Scroll Interaction (Optional enhancement usually done via wheel mapping, keeping native scroll for now for simplicity/robustness)
+    </script>
 </body>
 
 </html>
