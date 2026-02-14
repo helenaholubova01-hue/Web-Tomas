@@ -9,9 +9,10 @@
     --bg-warm: #fff8e1;
     /* Light yellow tint for emphasis */
 
-    --primary-color: #fbbf24;
-    /* Richer Construction Yellow */
-    --primary-dark: #d97706;
+    --primary-color: #eab308;
+    /* Softer, professional construction gold */
+    --primary-dark: #ca8a04;
+    /* Deep golden/amber */
     /* Darker amber for depth */
 
     --heading-color: #111827;
