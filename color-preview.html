@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barevné palety – porovnání</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', sans-serif; background: #f0f0f0; padding: 40px 20px; }
+  h1 { text-align: center; margin-bottom: 10px; font-size: 1.8rem; color: #333; }
+  .subtitle { text-align: center; color: #777; margin-bottom: 40px; }
+  .palettes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1300px; margin: 0 auto; }
+  .palette { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  .palette h2 { font-size: 1.1rem; margin-bottom: 4px; }
+  .palette .tag { font-size: 0.8rem; color: #999; margin-bottom: 20px; display: block; }
+  .palette.recommended { border: 2px solid #c07a3e; }
+  .palette.recommended h2::after { content: ' ★'; color: #c07a3e; }
+  .swatch-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .swatch { width: 48px; height: 48px; border-radius: 8px; flex-shrink: 0; border: 1px solid rgba(0,0,0,0.08); }
+  .swatch-info { font-size: 0.85rem; }
+  .swatch-info .name { font-weight: 600; color: #333; }
+  .swatch-info .hex { color: #999; font-family: monospace; font-size: 0.8rem; }
+  .divider { height: 1px; background: #eee; margin: 16px 0; }
+
+  /* Mini mockup */
+  .mockup { margin-top: 20px; border-radius: 8px; overflow: hidden; border: 1px solid #eee; }
+  .mockup-header { padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; }
+  .mockup-header .logo { font-weight: 700; font-size: 0.9rem; }
+  .mockup-header .nav { font-size: 0.75rem; display: flex; gap: 12px; }
+  .mockup-hero { padding: 30px 16px; text-align: center; color: #fff; }
+  .mockup-hero h3 { font-size: 1rem; margin-bottom: 6px; }
+  .mockup-hero p { font-size: 0.75rem; opacity: 0.85; margin-bottom: 12px; }
+  .mockup-btn { display: inline-block; padding: 6px 16px; border-radius: 6px; color: #fff; font-size: 0.75rem; font-weight: 600; text-decoration: none; }
+  .mockup-section { padding: 16px; }
+  .mockup-section h4 { font-size: 0.85rem; margin-bottom: 6px; }
+  .mockup-section p { font-size: 0.7rem; line-height: 1.5; }
+  .mockup-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+  .mockup-card { padding: 10px; border-radius: 6px; border: 1px solid #eee; }
+  .mockup-card .icon { font-size: 1.2rem; margin-bottom: 4px; }
+  .mockup-card .label { font-size: 0.7rem; font-weight: 600; }
+  .mockup-footer { padding: 12px 16px; text-align: center; font-size: 0.65rem; }
+</style>
+</head>
+<body>
+
+<h1>Barevné palety pro web Tomáše Troppa</h1>
+<p class="subtitle">Otevři v prohlížeči a porovnej. Každá paleta obsahuje ukázku mini-layoutu.</p>
+
+<div class="palettes">
+
+  <!-- CURRENT -->
+  <div class="palette">
+    <h2>Aktuální</h2>
+    <span class="tag">Současné barvy na webu</span>
+    <div class="swatch-row"><div class="swatch" style="background:#ca7c40"></div><div class="swatch-info"><div class="name">Primary</div><div class="hex">#ca7c40</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#a66533"></div><div class="swatch-info"><div class="name">Primary hover</div><div class="hex">#a66533</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#1d3557"></div><div class="swatch-info"><div class="name">Secondary</div><div class="hex">#1d3557</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#102035"></div><div class="swatch-info"><div class="name">Secondary dark</div><div class="hex">#102035</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#0e0c19"></div><div class="swatch-info"><div class="name">Text</div><div class="hex">#0e0c19</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#3c3a47"></div><div class="swatch-info"><div class="name">Text light</div><div class="hex">#3c3a47</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#f8f9fa"></div><div class="swatch-info"><div class="name">Pozadí</div><div class="hex">#f8f9fa</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#e9ecef"></div><div class="swatch-info"><div class="name">Accent</div><div class="hex">#e9ecef</div></div></div>
+
+    <div class="mockup">
+      <div class="mockup-header" style="background:#fff; color:#1d3557;">
+        <div class="logo">Tomáš Tropp</div>
+        <div class="nav" style="color:#3c3a47;">Služby Realizace Kontakt</div>
+      </div>
+      <div class="mockup-hero" style="background: linear-gradient(135deg, #1d3557, #102035);">
+        <h3>Stavíme z vápenopísku</h3>
+        <p>Profesionální zdění s tradicí</p>
+        <span class="mockup-btn" style="background:#ca7c40;">Nezávazná poptávka</span>
+      </div>
+      <div class="mockup-section" style="background:#f8f9fa;">
+        <h4 style="color:#1d3557;">Proč vápenopísek?</h4>
+        <div class="mockup-cards">
+          <div class="mockup-card"><div class="icon" style="color:#ca7c40;">🧱</div><div class="label" style="color:#0e0c19;">Pevnost</div></div>
+          <div class="mockup-card"><div class="icon" style="color:#ca7c40;">🔇</div><div class="label" style="color:#0e0c19;">Zvuková izolace</div></div>
+        </div>
+      </div>
+      <div class="mockup-footer" style="background:#102035; color:rgba(255,255,255,0.5);">© 2025 Tomáš Tropp</div>
+    </div>
+  </div>
+
+  <!-- VARIANTA A -->
+  <div class="palette recommended">
+    <h2>Varianta A – Teplá & přírodní</h2>
+    <span class="tag">Doporučená – důvěryhodná, lidská</span>
+    <div class="swatch-row"><div class="swatch" style="background:#c07a3e"></div><div class="swatch-info"><div class="name">Primary</div><div class="hex">#c07a3e</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#a36632"></div><div class="swatch-info"><div class="name">Primary hover</div><div class="hex">#a36632</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#3a5568"></div><div class="swatch-info"><div class="name">Secondary</div><div class="hex">#3a5568</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#2a3f50"></div><div class="swatch-info"><div class="name">Secondary dark</div><div class="hex">#2a3f50</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#2d2d3a"></div><div class="swatch-info"><div class="name">Text</div><div class="hex">#2d2d3a</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#5a5869"></div><div class="swatch-info"><div class="name">Text light</div><div class="hex">#5a5869</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#faf8f5"></div><div class="swatch-info"><div class="name">Pozadí</div><div class="hex">#faf8f5</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#efe9e1"></div><div class="swatch-info"><div class="name">Accent</div><div class="hex">#efe9e1</div></div></div>
+
+    <div class="mockup">
+      <div class="mockup-header" style="background:#fff; color:#3a5568;">
+        <div class="logo">Tomáš Tropp</div>
+        <div class="nav" style="color:#5a5869;">Služby Realizace Kontakt</div>
+      </div>
+      <div class="mockup-hero" style="background: linear-gradient(135deg, #3a5568, #2a3f50);">
+        <h3>Stavíme z vápenopísku</h3>
+        <p>Profesionální zdění s tradicí</p>
+        <span class="mockup-btn" style="background:#c07a3e;">Nezávazná poptávka</span>
+      </div>
+      <div class="mockup-section" style="background:#faf8f5;">
+        <h4 style="color:#3a5568;">Proč vápenopísek?</h4>
+        <div class="mockup-cards">
+          <div class="mockup-card"><div class="icon" style="color:#c07a3e;">🧱</div><div class="label" style="color:#2d2d3a;">Pevnost</div></div>
+          <div class="mockup-card"><div class="icon" style="color:#c07a3e;">🔇</div><div class="label" style="color:#2d2d3a;">Zvuková izolace</div></div>
+        </div>
+      </div>
+      <div class="mockup-footer" style="background:#2a3f50; color:rgba(255,255,255,0.5);">© 2025 Tomáš Tropp</div>
+    </div>
+  </div>
+
+  <!-- VARIANTA B -->
+  <div class="palette">
+    <h2>Varianta B – Zemitá se šalvějí</h2>
+    <span class="tag">Přírodní, ekologická</span>
+    <div class="swatch-row"><div class="swatch" style="background:#b8834f"></div><div class="swatch-info"><div class="name">Primary</div><div class="hex">#b8834f</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#9a6d3e"></div><div class="swatch-info"><div class="name">Primary hover</div><div class="hex">#9a6d3e</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#3d5a4e"></div><div class="swatch-info"><div class="name">Secondary</div><div class="hex">#3d5a4e</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#2a3f37"></div><div class="swatch-info"><div class="name">Secondary dark</div><div class="hex">#2a3f37</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#2a2e2c"></div><div class="swatch-info"><div class="name">Text</div><div class="hex">#2a2e2c</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#5a5f5d"></div><div class="swatch-info"><div class="name">Text light</div><div class="hex">#5a5f5d</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#f7f5f0"></div><div class="swatch-info"><div class="name">Pozadí</div><div class="hex">#f7f5f0</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#e8e4db"></div><div class="swatch-info"><div class="name">Accent</div><div class="hex">#e8e4db</div></div></div>
+
+    <div class="mockup">
+      <div class="mockup-header" style="background:#fff; color:#3d5a4e;">
+        <div class="logo">Tomáš Tropp</div>
+        <div class="nav" style="color:#5a5f5d;">Služby Realizace Kontakt</div>
+      </div>
+      <div class="mockup-hero" style="background: linear-gradient(135deg, #3d5a4e, #2a3f37);">
+        <h3>Stavíme z vápenopísku</h3>
+        <p>Profesionální zdění s tradicí</p>
+        <span class="mockup-btn" style="background:#b8834f;">Nezávazná poptávka</span>
+      </div>
+      <div class="mockup-section" style="background:#f7f5f0;">
+        <h4 style="color:#3d5a4e;">Proč vápenopísek?</h4>
+        <div class="mockup-cards">
+          <div class="mockup-card"><div class="icon" style="color:#b8834f;">🧱</div><div class="label" style="color:#2a2e2c;">Pevnost</div></div>
+          <div class="mockup-card"><div class="icon" style="color:#b8834f;">🔇</div><div class="label" style="color:#2a2e2c;">Zvuková izolace</div></div>
+        </div>
+      </div>
+      <div class="mockup-footer" style="background:#2a3f37; color:rgba(255,255,255,0.5);">© 2025 Tomáš Tropp</div>
+    </div>
+  </div>
+
+  <!-- VARIANTA C -->
+  <div class="palette">
+    <h2>Varianta C – Moderní teplá</h2>
+    <span class="tag">Svěží, živá, pro mladší publikum</span>
+    <div class="swatch-row"><div class="swatch" style="background:#d4845a"></div><div class="swatch-info"><div class="name">Primary</div><div class="hex">#d4845a</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#b86e48"></div><div class="swatch-info"><div class="name">Primary hover</div><div class="hex">#b86e48</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#384b5e"></div><div class="swatch-info"><div class="name">Secondary</div><div class="hex">#384b5e</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#283848"></div><div class="swatch-info"><div class="name">Secondary dark</div><div class="hex">#283848</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#33333d"></div><div class="swatch-info"><div class="name">Text</div><div class="hex">#33333d</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#6b6b78"></div><div class="swatch-info"><div class="name">Text light</div><div class="hex">#6b6b78</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#faf9f7"></div><div class="swatch-info"><div class="name">Pozadí</div><div class="hex">#faf9f7</div></div></div>
+    <div class="swatch-row"><div class="swatch" style="background:#edeae5"></div><div class="swatch-info"><div class="name">Accent</div><div class="hex">#edeae5</div></div></div>
+
+    <div class="mockup">
+      <div class="mockup-header" style="background:#fff; color:#384b5e;">
+        <div class="logo">Tomáš Tropp</div>
+        <div class="nav" style="color:#6b6b78;">Služby Realizace Kontakt</div>
+      </div>
+      <div class="mockup-hero" style="background: linear-gradient(135deg, #384b5e, #283848);">
+        <h3>Stavíme z vápenopísku</h3>
+        <p>Profesionální zdění s tradicí</p>
+        <span class="mockup-btn" style="background:#d4845a;">Nezávazná poptávka</span>
+      </div>
+      <div class="mockup-section" style="background:#faf9f7;">
+        <h4 style="color:#384b5e;">Proč vápenopísek?</h4>
+        <div class="mockup-cards">
+          <div class="mockup-card"><div class="icon" style="color:#d4845a;">🧱</div><div class="label" style="color:#33333d;">Pevnost</div></div>
+          <div class="mockup-card"><div class="icon" style="color:#d4845a;">🔇</div><div class="label" style="color:#33333d;">Zvuková izolace</div></div>
+        </div>
+      </div>
+      <div class="mockup-footer" style="background:#283848; color:rgba(255,255,255,0.5);">© 2025 Tomáš Tropp</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
